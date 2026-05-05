@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Text Classifier</title>
+	<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+	<main class="container">
+		<h1>Sentiment Classifier</h1>
+		<form id="classify-form">
+			<label for="input-text">Enter text</label>
+			<textarea id="input-text" name="text" rows="5" placeholder="Type a sentence..." required></textarea>
+			<button type="submit">Classify</button>
+		</form>
+		<p id="status" aria-live="polite">Submit text to see the model response.</p>
+		<section class="result" aria-live="polite">
+			<h2>Response</h2>
+			<p id="response-text">-</p>
+		</section>
+	</main>
+
+	<script src="/script.js" defer></script>
+</body>
+</html>
