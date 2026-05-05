@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ask With &amp; Without Tool</title>
+	<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+	<main class="container">
+		<h1>Ask the Model</h1>
+		<form id="ask-form">
+			<label for="input-text">Enter text</label>
+			<textarea id="input-text" name="text" rows="5" placeholder="Type your question..." required></textarea>
+			<button type="submit">Send</button>
+		</form>
+		<p id="status" aria-live="polite">Submit text to see the model responses.</p>
+		<div class="results-grid">
+			<section class="result" aria-live="polite">
+				<h2>Without Tool</h2>
+				<p id="response-without">-</p>
+			</section>
+			<section class="result" aria-live="polite">
+				<h2>With Tool</h2>
+				<p id="response-with">-</p>
+			</section>
+		</div>
+	</main>
+
+	<script src="/script.js" defer></script>
+</body>
+</html>
